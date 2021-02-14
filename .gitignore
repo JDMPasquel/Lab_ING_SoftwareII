@@ -21,3 +21,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Lab1_Remember_polymorphism/Remember_polymorphism/nbproject/
+/Remember_Polymorphism/nbproject/
+/Remember_Polymorphism/target/

@@ -56,6 +56,7 @@ public class ParkingTest {
         assertEquals(expResult, result);
         System.out.println("Carro menos una hora");
         output = LocalDateTime.of(2021, Month.FEBRUARY, 22, 8, 45);
+        expResult = 2000;
         result = service.calculateParkingCost(veh, input, output);
         assertEquals(expResult, result);
         System.out.println("Carro 1 horas y 30 minutos");

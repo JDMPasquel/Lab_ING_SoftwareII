@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.unicauca.parkingapp.domain;
 
 import co.edu.unicauca.parkingapp.access.IVehicleRepository;
@@ -15,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Pruebas unitarias del parqueadero
+ * Unitay Parking Test
  *
  * @author Libardo
  */

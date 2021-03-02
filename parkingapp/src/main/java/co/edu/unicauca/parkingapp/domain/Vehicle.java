@@ -1,5 +1,10 @@
 package co.edu.unicauca.parkingapp.domain;
 
+/**
+ * Parking vehicles: moto, car, truck
+ * @author Juan David Muñoz Pasquel - <jdamupasquel@unicauca.edu.co>
+ * @author Whalen Stiven Caicedo - <whastica@unicauca.edu.co>
+ */
 public class Vehicle {
     private String plate;
     private TypeEnum type;
@@ -7,16 +12,17 @@ public class Vehicle {
     public Vehicle() {
     }
 
-    @Override
-    public String toString() {
-        return "Vehicle{" + "plate=" + plate + ", type=" + type + '}';
-    }
-    
     public Vehicle(String plate, TypeEnum type) {
         this.plate = plate;
         this.type = type;
     }
+    
+    @Override
+    public String toString() {
+        return "Vehicle{" + "plate=" + plate + ", type=" + type + '}';
+    }
 
+    //Getters and Setters mutators
     public String getPlate() {
         return plate;
     }

@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.unicauca.parkingapp.access;
 
 /**
- *
- * @author ASUS
+ * CarParkingCost Class implements the IParkingCost Interface to implement the
+ * own value of the Cost for the parking time.
+ * @author Juan David Muñoz Pasquel - <jdamupasquel@unicauca.edu.co>
+ * @author Whalen Stiven Caicedo - <whastica@unicauca.edu.co>
  */
 public class RepositoryFactory {
     private static RepositoryFactory instance;
@@ -16,6 +13,10 @@ public class RepositoryFactory {
         
     }
     
+    /**
+     * create instance for RepositoryFactory
+     * this method get instance of  the factory
+     */
     public static RepositoryFactory getInstance() {
 
         if (instance == null) {
@@ -25,6 +26,10 @@ public class RepositoryFactory {
 
     }
     
+    /**
+     * this method get repository
+     * @param Type ->  String with vehicle type
+     */
     public IVehicleRepository getRepository(String type) {
 
         IVehicleRepository result = null;
@@ -36,6 +41,5 @@ public class RepositoryFactory {
         }
 
         return result;
-
     }
 }
